@@ -1,0 +1,11 @@
+version: '2'
+services:
+    simplemonoexample-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/simpleMonoExample/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=simpleMonoExample
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
